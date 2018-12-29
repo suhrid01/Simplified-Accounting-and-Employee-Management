@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/profile_circular_border_imageview"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#ebca0707"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:id="@+id/stemail"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:id="@+id/staddress"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/stphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:padding="20dp" />
+
+
+            <Spinner
+                android:id="@+id/payment"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_centerVertical="true"
+
+                android:spinnerMode="dropdown" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/stsec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/place_order2"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:hint="Amount Collected"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:visibility="invisible" />
+
+
+                <EditText
+                    android:id="@+id/bank"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:hint="Bank Name"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/cheque"
+                android:layout_marginLeft="10dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/bank"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:hint="Cheque Number"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/bankacc"
+                    android:layout_marginTop="70dp"
+
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/cheque"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:hint="Bank Branch"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/ifsc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/bank"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:hint="IFSC Code"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/place_order2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/bankacc"
+                    android:layout_marginLeft="109dp"
+                    android:layout_marginStart="109dp"
+                    android:text="Complete Order"
+                    android:textColor="@color/btn_login"
+                    android:onClick="onclick2"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/place_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="110dp"
+                android:onClick="onclick2"
+                android:text="Complete Order"
+                android:textColor="@color/btn_login" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

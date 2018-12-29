@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adrawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.RemoveEmployee">
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgimg">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            android:text="Please Select Employee"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/eidspin"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="186dp"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/btnasignvisit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="159dp"
+            android:background="@color/btn_login_bg"
+            android:onClick="onclick2"
+            android:text="Remove Employee"
+            android:textColor="@color/btn_login" />
+
+
+    </RelativeLayout>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/snavigation"
+        app:headerLayout="@layout/sheader"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/tdrawermenu"
+        android:layout_gravity="start"/>
+</android.support.v4.widget.DrawerLayout>

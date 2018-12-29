@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+        <item
+            android:id="@+id/dashboard"
+            android:title="Dashboard"
+            />
+
+
+
+        <item
+            android:id="@+id/tprofile"
+            android:title="Profile"
+            />
+
+    <item
+        android:id="@+id/gpsinfo"
+        android:title="GPS Info"
+        />
+
+
+
+        <item
+            android:id="@+id/order"
+            android:title="Order">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/addorder"
+
+                    android:title="Add Order" />
+
+               <!-- <item
+                    android:id="@+id/addorder2"
+
+                    android:title="Add Order2" />  -->
+
+                <item
+                    android:id="@+id/assignorder"
+                      android:title="Assigned Orders" />
+                <item
+                    android:id="@+id/pendingorder"
+
+                    android:title="Pending Orders" />
+                <item
+                    android:id="@+id/orderhistory"
+
+                    android:title="Order History" />
+            </group>
+        </menu>
+        </item>
+
+
+
+
+        <item android:title="Employees"
+            android:id="@+id/employees">
+        <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/addemployee"
+
+                android:title="Add Employee" />
+
+            <item
+                android:id="@+id/rememployee"
+                android:title=" Remove Employee" />
+            <item
+                android:id="@+id/viewemployee"
+
+                android:title="View Employee" />
+        </group>
+        </menu>
+
+        </item>
+
+
+        <item
+            android:id="@+id/Clients"
+            android:title="Clients"
+          >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/addclient"
+
+                        android:title="Add Company" />
+
+                    <item
+                        android:id="@+id/remclient"
+                        android:title=" Remove Company" />
+                    <item
+                        android:id="@+id/viewclient"
+
+                        android:title="View Company" />
+                </group>
+            </menu>
+
+        </item>
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        />
+
+</menu>

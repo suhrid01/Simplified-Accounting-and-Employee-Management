@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Configure your App's name, as displayed in the launcher and optionally the Toolbar -->
+    <string name="app_name">Simplified Sales</string>
+    <!--Configure your Admob ID below, or leave empty if you do not want to enable Ads in your app -->
+    <string name="ad_unit_id"><!--admob ad unit id here --></string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="image_chooser">File Chooser</string>
+    <string name="action_settings">Settings</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="stop">Stop</string>
+    <string name="noconnection">No internet connection was found</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="share">Share</string>
+    <string name="quote">Quote</string>
+
+    <string name="error">Error</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="close">Close</string>
+    <string name="download">Download</string>
+    <string name="saved">Saved at: </string>
+    <string name="sharetitle">Share this!</string>
+    <string name="download_fail">Download failed</string>
+    <string name="download_done">The file has been saved in the downloads folder, open it by tapping the file in your notifications</string>
+    <string name="exit_message">Thank you for using our app!</string>
+    <string name="no_app_message">No app found to complete this action!</string>
+    <string name="dialog_about"><![CDATA[Thank you for downloading our application!]]></string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+
+    <string name="share1">I came across </string>
+    <!--  we will automatically website title here-->
+    <string name="share2"> using </string>
+    <!--  we will automatically put your apps name and link here -->
+
+    <string name="rate_later">Perhaps later</string>
+    <string name="rate_never">No thanks</string>
+    <string name="rate_yes">Yes</string>
+    <string name="rate_message">We hope you enjoy using %1$s. Would you like to help us by rating us in the Store?</string>
+    <string name="rate_title">Enjoying our app?</string>
+    <string name="hint_email">Employee Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Register now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
